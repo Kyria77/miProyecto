@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 1000px;
+    margin: 0 auto;
+    background-color:lightskyblue;
+    padding: 15px;
+    display: flex;
+}
+.logo{
+    width: 150px;
+    height: 100px;
+}
+h1{
+    margin-left: 300px;
+    margin-top: 25px;
+}
+/***************NAVEGACION*****************/
+nav{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: black;
+    display: flex;
+    justify-content:space-between ;
+    line-height: 35px;
+    padding-right: 20px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    margin-left: 280px;
+}
+nav ul a{
+    background-color: white;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: black;
+    border-right: 3px solid black;
+}
+nav ul a:hover{
+    background-color: darkblue;
+    color: white;
+}
+/*****************MAIN*************************/
+main{
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+}
+main section{
+    background-color: lightblue;
+    width: 75%;
+    padding: 10px;
+    display: flex;
+    flex-wrap:wrap ;
+}
+main section article{
+    width: 47%;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+}
+main aside{
+    background-color: black;
+    width: 25%;
+    padding: 15px;
+}
+aside h2{
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+}
+/* aside img{
+    width: 200px;
+    height: 200px;
+} */
+main aside .foto{
+    width: 90%;
+}
+aside ul a{
+    text-decoration: none;
+    color: white;
+    line-height: 40px;
+}
+main aside ul{
+    list-style: none;
+}
+/**********FOOTER************/
+footer{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 50 px 60px;
+    background-color:black;
+    color: white;
+    text-align: center;
+}
+
+/*Pantalla grande, pero ya se visualiza para grande
+@media (max-width:1200px){
+
+}*/
+/*Pantalla de tablet*/
+@media (max-width:991px){
+    header, nav, main, footer{
+        width: 100%;
+    }
+    header{
+        align-items: center;
+    }
+    h1{
+        margin-left: 100px;
+    }
+    nav ul{
+        margin-left: 20px;
+    }
+    main section article{
+        width: 100%;
+    }
+    
+}
+/*Pantalla de móvil*/
+@media (max-width:580px){
+    nav{
+        flex-direction: column;
+    }
+    main{
+        flex-direction: column;
+    }
+    main section{
+        width: 100%;
+    }
+    main aside{
+        width: 100%;
+    }
+    main aside .foto{
+        display: none;
+    }
+}
